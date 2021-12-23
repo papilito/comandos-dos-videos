@@ -1,0 +1,13 @@
+$nomention
+$onlyIf[$message[1]!=;❌ ID inválido!]
+$onlyPerms[manageserver;❌ Você precisa da permissão de GERENCIAR SERVIDOR para utilizar este comando!]
+$onlyIf[$getUserVar[gw1;$serverOwner]!=0;❌ Este sorteio já foi encerrado! Sorteie algo novo com (seu prefixo)sorteio.]
+$onlyIf[$checkContains[$getBotInvite;client_id=$getMessage[$channelID;$message[1];authorID]]==true;❌ Este não é um sorteio criado por um bot!]
+🥳 O usuário $replaceText[$replaceText[`$replaceText[$replaceText[%$checkCondition[$randomText[$joinSplitText[;]]==]%;%true%;$randomText[$joinSplitText[;]];1];%false%;$randomText[$joinSplitText[;]];1]`;``;$username[$authorID]#$discriminator[$authorID];1];` `;$username[$authorID]#$discriminator[$authorID];1] ganhou o sorteio: $replaceText[$replaceText[`$getUserVar[gw1;$serverOwner]`!;``!;`unknown :(`;1];` `!;`unknown :(`;1]
+$setUserVar[gw1;0;$serverOwner]
+$setUserVar[gw2;$replaceText[$replaceText[%$checkCondition[$randomText[$joinSplitText[;]]==]%;%true%;$'randomText[$joinSplitText[;]];1];%false%;$randomText[$joinSplitText[;]];1];$serverOwner]
+$textSplit[$getReactions[$channelID;$message[1];+;🎉];+]
+$suppressErrors[❌ O ID enviado não é de um sorteio feito por mim ou apenas não é um sorteio! Utilize o ID da mensagem enviado do sorteio pelo bot!]
+$varExistError[gw1;Crie uma variável chamada gw1, e coloque o valor como 0]
+$varExistError[gw2;Crie uma variável chamada gw2, e coloque o valor como 0]
+$varExistError[gw3;Crie uma variável chamada gw3, e coloque o valor como 0]
