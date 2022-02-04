@@ -1,0 +1,14 @@
+setEntrada:
+
+$nomention
+$onlyAdmin[❌ Você não tem ADM para usar este comando!]
+$setServerVar[entrada;$mentionedChannels[1]]
+✅ Canal setado com sucesso!
+
+$onJoined[$getServerVar[entrada]]
+
+$nomention
+$title[$username[$mentioned[1;yes]] entrou!]
+$description[Seja bem vindo(a) $username, agora temos $membersCount membros no servidor!]
+$footerIcon[$userAvatar[$authorID]]
+$addTimestamp
