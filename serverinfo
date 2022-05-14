@@ -1,0 +1,29 @@
+$deletecommand
+
+Convite do servidor: **$getServerInvite**
+
+$nomention
+
+$thumbnail[$serverIcon]
+
+$serverInfo[**Nome: {name}**
+
+ID: `{ID}`
+
+Dono: `{owner}`
+
+Região: `{region}`
+
+Servidor verificado: `{verificarionLevel}`
+
+Cargos: `$roleCount`
+
+Canais: `$channelCount`
+
+Membros: `$membersCount`
+
+Emojis: `$emoteCount`
+
+{emoji}]
+
+$footer[Pedido por: $username]
